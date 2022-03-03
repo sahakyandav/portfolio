@@ -1,0 +1,214 @@
+body {
+    background-color: rgb(22, 21, 21);
+    color: white;
+    overflow-x: hidden;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+}
+
+* {
+    transition: 0.2s linear;
+    margin: 0;
+    padding: 0;
+}
+
+.blue {
+    color: rgb(31, 19, 194) !important;
+}
+
+.error {
+    color: rgb(31, 19, 194) !important;
+}
+
+.active-page {
+    pointer-events: none;
+}
+
+@keyframes onload {
+    from {
+        opacity: 0;
+    }
+    to {
+        opacity: 1;
+    }
+}
+
+#header {
+    width: 100%;
+    height: 100px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.page-title {
+    margin: 0;
+    padding: 0;
+    position: relative;
+    left: 2%;
+}
+
+.menu {
+    position: relative;
+    display: flex;
+    justify-content: space-evenly;
+    width: 320px;
+    right: 2%;
+}
+
+.menu a {
+    text-decoration: none;
+    color: white;
+    font-size: 20px;
+    cursor: pointer;
+}
+
+.menu a:hover {
+    color: rgb(27, 16, 175);
+}
+
+.page-title .blue {
+    padding-right: 1px;
+}
+
+.block1 {
+    width: 100%;
+    height: 200px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.texts {
+    width: 235px;
+    height: 36%;
+    position: relative;
+}
+
+.text-1 {
+    position: absolute;
+    left: 0;
+    top: 0;
+    opacity: 0;
+    animation: t1 1.1s ease 0.8s forwards;
+}
+
+@keyframes t1 {
+    from {
+        transform: translateX(-25%);
+        opacity: 0;
+    }
+    to {
+        transform: translateX(0%);
+        opacity: 1;
+    }
+}
+
+.text-2 {
+    position: absolute;
+    right: 0;
+    bottom: 0;
+    opacity: 0;
+    animation: t2 1.1s ease 1.7s forwards;
+}
+
+@keyframes t2 {
+    from {
+        transform: translateX(-20%);
+        opacity: 0;
+    }
+    to {
+        transform: translateX(0%);
+        opacity: 1;
+    }
+}
+
+
+/* Projects */
+
+.introduction {
+    height: 120px;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.introduction h1 {
+    font-size: 36px;
+}
+
+.showcase {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    position: relative;
+}
+
+.window {
+    width: 90%;
+    height: 400px;
+    margin: 40px 0;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+}
+
+.project {
+    height: 100%;
+    width: 330px;
+    border-radius: 2%;
+    background-color: rgba(255, 255, 255, 0.1);
+}
+
+@media screen and (max-width: 1250px) {
+    .project {
+        width: 280px;
+    }
+}
+
+
+/* Blog */
+
+.bold {
+    font-weight: bold;
+}
+
+.main-content {
+    width: 460px;
+    position: absolute;
+    left: 50%;
+    transform: translateX(-50%);
+    font-size: 20px;
+}
+
+.blog-entry {
+    margin: 10px auto;
+    border-radius: 2%;
+    background-color: #232323;
+}
+
+#textarea {
+    min-height: 110px;
+    width: 100%;
+    font-size: 16px;
+}
+
+#submit-entry {
+    border: unset;
+    width: 100px;
+    height: 25px;
+    font-size: 18px;
+    background-color: #e7e7e7;
+    color: black;
+    transition: 0.1s ease;
+}
+
+#submit-entry:hover {
+    background-color: #c2c2c2;
+}
+
+#submit-entry:active {
+    background-color: #aaaaaa;
+}
