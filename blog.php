@@ -7,7 +7,6 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
     <link rel="stylesheet" href="./style.css">
-    <script src="./script.js"></script>
 </head>
 
 <body>
@@ -20,6 +19,7 @@
             <div class="blog"><a class="active-page">Blog</a></div>
         </div>
     </header>
+    <script src="./script.js"></script>
     <div class="main-content">
         <div class="write-entry">
             <form id='form' action="process-blog.php" method="post" onsubmit='return validate()'>
