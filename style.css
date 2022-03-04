@@ -45,6 +45,11 @@ body {
     padding: 0;
     position: relative;
     left: 2%;
+    user-select: none;
+}
+
+.page-title:hover {
+    cursor: pointer;
 }
 
 .menu {

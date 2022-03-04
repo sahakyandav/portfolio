@@ -10,12 +10,6 @@ document.querySelector('.contact').onclick = () => {
 document.querySelector('.blog').onclick = () => {
     location.replace('blog.php')
 }
-
-// window.onload = function () {
-    let startElements = ['header'];
-
-    startElements.forEach(e => {
-        // document.querySelector(e).style.animation = 'onload 0.8s forwards';
-        document.querySelector(e).style.opacity = '1';
-    })
-// }    
+document.querySelector('.page-title').onclick = () => {
+    location.replace('index.php')
+}
