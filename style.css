@@ -75,59 +75,6 @@ body {
     padding-right: 1px;
 }
 
-.block1 {
-    width: 100%;
-    height: 200px;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-}
-
-.texts {
-    width: 235px;
-    height: 36%;
-    position: relative;
-}
-
-.text-1 {
-    position: absolute;
-    left: 0;
-    top: 0;
-    opacity: 0;
-    animation: t1 1.1s ease 0.8s forwards;
-}
-
-@keyframes t1 {
-    from {
-        transform: translateX(-25%);
-        opacity: 0;
-    }
-    to {
-        transform: translateX(0%);
-        opacity: 1;
-    }
-}
-
-.text-2 {
-    position: absolute;
-    right: 0;
-    bottom: 0;
-    opacity: 0;
-    animation: t2 1.1s ease 1.7s forwards;
-}
-
-@keyframes t2 {
-    from {
-        transform: translateX(-20%);
-        opacity: 0;
-    }
-    to {
-        transform: translateX(0%);
-        opacity: 1;
-    }
-}
-
-
 /* Projects */
 
 .introduction {

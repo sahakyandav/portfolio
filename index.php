@@ -19,12 +19,6 @@
             <div class="blog"><a>Blog</a></div>
         </div>
     </header>
-    <div class="block1">
-        <div class="texts">
-            <h1 class="text-1">Do more,</h1>
-            <h1 class="text-2"> work less </h1>
-        </div>
-    </div>
     <script src="./script.js"></script>
 </body>
 
