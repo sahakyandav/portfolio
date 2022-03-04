@@ -44,7 +44,7 @@ body {
     margin: 0;
     padding: 0;
     position: relative;
-    left: 2%;
+    left: 22px;
     user-select: none;
 }
 
@@ -181,7 +181,8 @@ body {
 }
 
 .main-content {
-    width: 460px;
+    max-width: 560px;
+    width: 100%;
     position: absolute;
     left: 50%;
     transform: translateX(-50%);
@@ -189,9 +190,20 @@ body {
 }
 
 .blog-entry {
-    margin: 10px auto;
-    border-radius: 2%;
+    margin: 7px 2px;
+    border-radius: 9px;
+    padding: 5px 8px;
+    border: 1px solid #2949c2;
     background-color: #232323;
+    position: relative;
+}
+
+.posts {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    position: relative;
+    top: 5px;
 }
 
 #textarea {
@@ -216,4 +228,14 @@ body {
 
 #submit-entry:active {
     background-color: #aaaaaa;
+}
+
+.blog-date {
+    position: absolute;
+    right: 6px;
+    top: 7px;
+}
+
+.blog-text {
+    margin-top: 6px;
 }

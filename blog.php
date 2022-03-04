@@ -32,18 +32,20 @@
                 <input type="submit" id="submit-entry">
             </form>
         </div>
+        <div class='posts'>
         <?php
         $myfile = fopen("blog.txt", "r+") or die("Unable to open file!");
         if (filesize("blog.txt") != 0) {
             while (!feof($myfile)) {
                 $l = fgets($myfile);
                 $c = explode("-", $l);
-                echo "<div class='blog-entry'>On {$c[0]}, <span class='bold'>{$c[1]}</span> wrote:" . "<br><span class='bold'>$c[2]</span><br>" . $c[3] . "<br><br></div>";
+                echo "<div class='blog-entry'><span class='blog-date'>{$c[0]}</span>"."<span class='bold'>{$c[1]}</span> - " . "<span class='bold'>$c[2]</span><br><p class='blog-text'>" . $c[3] . "</p><br></div>";
             }
         }
         fclose($myfile);
         ?>
         </p>
+        </div>
         <script>
             function validate() {
                 let returnOne = true;

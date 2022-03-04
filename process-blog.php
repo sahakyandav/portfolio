@@ -21,7 +21,7 @@
         $myfile = fopen("blog.txt", "a+") or die("Unable to open file!");
         if (filesize('blog.txt') === 0)
             $start_char = '';
-        fwrite($myfile, $start_char . date("m.d.y, G:i:s") . "-{$author}-{$title}-{$entry}");
+        fwrite($myfile, $start_char . date("j M Y, G:i:s") . "-{$author}-{$title}-{$entry}");
         fclose($myfile);
         header("Location: blog.php");
     }
