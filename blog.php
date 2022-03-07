@@ -21,55 +21,10 @@
     </header>
     <script src="./script.js"></script>
     <div class="main-content">
-        <div class='posts'>
-        <?php
-        $myfile = fopen("blog.txt", "r+") or die("Unable to open file!");
-        if (filesize("blog.txt") != 0) {
-            while (!feof($myfile)) {
-                $l = fgets($myfile);
-                $c = explode("-", $l);
-                echo "<div class='blog-entry'><span class='blog-date'>{$c[0]}</span>"."<span class='bold'>{$c[1]}</span> - " . "<span class='bold'>$c[2]</span><br><p class='blog-text'>" . $c[3] . "</p><br></div>";
-            }
-        }
-        fclose($myfile);
-        ?>
-        </p>
+        <div class='posts' id='blog'>
         </div>
-        <script>
-            function validate() {
-                let returnOne = true;
-                let returnTwo = true;
-                let returnThree = true;
-                let n = document.querySelector('#authorInput');
-                let p = document.querySelector('#titleInput');
-                let t = document.querySelector('#textarea');
-                let e1 = document.querySelector('#e1');
-                let e2 = document.querySelector('#e2');
-                let e3 = document.querySelector('#e3');
-                if (n.value === "") {
-                    e1.innerText = 'this field cannot be empty'
-                    returnOne = false;
-                } else {
-                    e1.innerText = ''
-                    returnOne = true;
-                }
-                if (p.value === "") {
-                    e2.innerText = 'this field cannot be empty'
-                    returnTwo = false;
-                } else {
-                    e2.innerText = ''
-                    returnTwo = true;
-                }
-                if (t.value === "") {
-                    e3.innerText = 'this field cannot be empty'
-                    returnThree = false;
-                } else {
-                    e3.innerText = ''
-                    returnThree = true;
-                }
-                return (returnOne && returnTwo && returnThree);
-            }
-        </script>
+    </div>
+    <script src='./blog.js'></script>
 </body>
 
 </html>
