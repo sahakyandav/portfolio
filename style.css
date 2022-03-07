@@ -147,7 +147,7 @@ body {
 
 .posts {
     display: flex;
-    flex-direction: column;
+    flex-direction: column-reverse;
     justify-content: space-evenly;
     position: relative;
     top: 5px;

@@ -17,19 +17,6 @@
     <br>
     <br>
     <br>
-    <!-- <form id='form' action="process-blog.php" method="post" onsubmit='return validate()'>
-        Author: <input type="text" name="author" id='authorInput'><br>
-        <span class="error" id='e1'></span><br>
-        Title: <input type="text" name="title" id='titleInput'><br>
-        <span class="error" id='e2'></span><br>
-        <textarea type="text" name="entry" id="textarea" contenteditable="true"></textarea><br>
-        <span class="error" id='e3'></span><br>
-        <input type="submit" id="submit-entry">
-    </form> -->
-    <script>
-        
-        // if ()
-    </script>
 </body>
 <script src="bundle.js"></script>
 
