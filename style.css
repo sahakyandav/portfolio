@@ -6,9 +6,12 @@ body {
 }
 
 * {
-    transition: 0.2s linear;
     margin: 0;
     padding: 0;
+}
+
+body * {
+    transition: 0.2s linear;
 }
 
 .blue {
@@ -45,7 +48,6 @@ body {
     padding: 0;
     position: relative;
     left: 22px;
-    user-select: none;
 }
 
 .page-title:hover {
@@ -65,6 +67,7 @@ body {
     color: white;
     font-size: 20px;
     cursor: pointer;
+    user-select: none;
 }
 
 .menu a:hover {
