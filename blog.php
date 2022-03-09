@@ -20,6 +20,7 @@
         </div>
     </header>
     <script src="./script.js"></script>
+    <div id="cover"></div>
     <div class="main-content">
         <div class='posts' id='blog'>
         </div>

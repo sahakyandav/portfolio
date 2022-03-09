@@ -136,13 +136,45 @@ body {
     font-size: 20px;
 }
 
+.main-content * {
+    transition: 0.5s ease;
+}
+
+#cover {
+    width: 100vw;
+    height: 100vh;
+    position: fixed;
+    top: 0;
+    left: 0;
+    pointer-events: none;
+    background-color: rgba(0, 0, 0, 0.520);
+    transition: unset;
+    opacity: 0;
+    z-index: 1;
+}
+
 .blog-entry {
+    width: 100%;
+    min-height: 124.8px; 
+}
+
+.blog-inner {
     margin: 7px 2px;
     border-radius: 9px;
-    padding: 5px 8px;
     border: 1px solid #2949c2;
     background-color: #232323;
     position: relative;
+    padding: 5px 8px;  
+    padding-bottom: 8px;
+    width: 100%;
+    height: inherit;
+}
+
+.blog-zoom-in {
+    position: absolute;
+    width: 100%;
+    z-index: 1000;
+    transform: scale(1.5);
 }
 
 .posts {
