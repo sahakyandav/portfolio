@@ -18,6 +18,6 @@
     <br>
     <br>
 </body>
-<script src="bundle.js"></script>
+<script src="./js/bundle.js"></script>
 
 </html>

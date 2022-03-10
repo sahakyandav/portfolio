@@ -184,6 +184,7 @@ body * {
     display: flex;
     flex-direction: column;
     justify-content: space-evenly;
+
     position: relative;
     top: 5px;
 }
@@ -220,4 +221,15 @@ body * {
 
 .blog-text {
     margin-top: 6px;
+}
+
+/* View blog */
+
+.view-blog {
+    width: 90vw;
+    height: 80%;
+    margin: 10px 20px;
+    padding: 10px;
+    border-radius: 9px;
+    border: 1px solid #2949c2;
 }

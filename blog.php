@@ -6,7 +6,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>davsahakyan</title>
-    <link rel="stylesheet" href="./style.css">
+    <link rel="stylesheet" href="./style/style.css">
 </head>
 
 <body>
@@ -19,13 +19,13 @@
             <div class="blog"><a class="active-page">Blog</a></div>
         </div>
     </header>
-    <script src="./script.js"></script>
+    <script src="./js/script.js"></script>
     <div id="cover"></div>
     <div class="main-content">
         <div class='posts' id='blog'>
         </div>
     </div>
-    <script src='./blog.js'></script>
+    <script src='./js/blog.js'></script>
 </body>
 
 </html>
