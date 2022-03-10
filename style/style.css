@@ -228,6 +228,7 @@ body * {
 .view-blog {
     width: 90vw;
     margin: 10px 20px;
+    margin-top: 40px;
     padding: 10px;
     padding-bottom: 30px;
     border-radius: 9px;
