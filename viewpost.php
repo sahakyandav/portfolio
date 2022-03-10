@@ -27,10 +27,10 @@
 <body>
     <?php
         echo "<div class='view-blog'>
-        <a href='./blog.php'><- Return to blog</a>
-        <div class='view-author'>{$_POST['author']}</div>
-        <div class='view-title'>{$_POST['title']}</div>
-        <div class='view-date'>{$_POST['date']}</div>
+        <a href='./blog.php'><- Return to blog</a><br><br>
+        <div class='view-author'>Author &nbsp;<span class='bold'>{$_POST['author']}</span></div>
+        <div class='view-title'>Title &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<span class='bold'>{$_POST['title']}</span></div>
+        <div class='view-date'>Date  &nbsp;&nbsp;&nbsp;&nbsp;<span class='bold'>{$_POST['date']}</span></div><br>
         <div class='view-content'>{$_POST['content']}</div>
         </div>";
     ?>
