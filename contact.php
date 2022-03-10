@@ -19,6 +19,31 @@
             <div class="blog"><a>Blog</a></div>
         </div>
     </header>
+    <div class="contact-wrapper">
+        <h1 id="find">You can find me on</h1>
+        <div class="contacts">
+            <div class="c" id="c-github">
+                <a href="https://github.com/sahakyandav" target="_blank">
+                    <img src="./style/icons/github.png" alt="github">
+                    <h1 class="bold">Github</h1>
+                </a>
+            </div>
+            <div class="c" id="c-fiverr">
+                <a href="https://www.fiverr.com/davsahakyann" target="_blank">
+                    <h1 class="bold">Fiverr</h1>
+                    <img src="./style/icons/fiverr.png" alt="fiverr">
+                </a>
+            </div>
+            <div class="c" id="c-github2">
+                <a href="https://github.com/sahakyandav" target="_blank">
+                    <img src="./style/icons/github.png" alt="github">
+                    <h1 class="bold">Github</h1>
+                </a>
+            </div>
+        </div>
+        <h1 class="c-email">Or just write me an email<br>at<br>david.sahakyan.work@gmail.com</h1>
+
+    </div>
     <script src="./js/script.js"></script>
 </body>
 

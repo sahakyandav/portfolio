@@ -34,6 +34,7 @@
             <div class="blog"><a>Blog</a></div>
         </div>
     </header>
+    <script src="./js/script.js"></script>
     <div class="view-blog-main">
         <?php
             echo "<div class='view-blog'>
