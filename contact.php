@@ -41,8 +41,7 @@
                 </a>
             </div>
         </div>
-        <h1 class="c-email">Or just write me an email<br>at<br>david.sahakyan.work@gmail.com</h1>
-
+        <h1 class="c-email">Or just write me an email<br><a href="mailto: david.sahakyan.work@gmail.com">david.sahakyan.work@gmail.com</h1>
     </div>
     <script src="./js/script.js"></script>
 </body>

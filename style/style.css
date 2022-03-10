@@ -242,8 +242,8 @@ body * {
     top: 50px;
     text-align: center;
     max-width: 400px;
-    width: 90%;
-    font-size: 22px;
+    width: 75%;
+    font-size: 21px;
     word-wrap: break-word;
     animation: email 1s ease-out 2.9s forwards;
     opacity: 0;
@@ -259,6 +259,12 @@ body * {
         transform: translateY(0%);
         opacity: 1;
     }
+}
+
+.c-email a {
+    position: relative;
+    top: 10px;
+    color: #fff;
 }
 
 /* Blog */
