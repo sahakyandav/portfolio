@@ -453,6 +453,10 @@ body * {
     .main-content {
         transform: translateX(-54%);
     }
+
+    .contacts {
+        height: 260px;
+    }
 }
 
 @media screen and (max-width: 375px) {
