@@ -23,21 +23,21 @@
         <h1>Projects</h1>
     </div>
     <div class="showcase">
-        <div class="window">
+        <!-- <div class="window"> -->
             <div class="project"></div>
             <div class="project"></div>
             <div class="project"></div>
-        </div>
-        <div class="window">
+        <!-- </div> -->
+        <!-- <div class="window"> -->
             <div class="project"></div>
             <div class="project"></div>
             <div class="project"></div>
-        </div>
-        <div class="window">
+        <!-- </div> -->
+        <!-- <div class="window"> -->
             <div class="project"></div>
             <div class="project"></div>
             <div class="project"></div>
-        </div>
+        <!-- </div> -->
     </div>
     <script src="./js/script.js"></script>
 </body>
