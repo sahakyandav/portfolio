@@ -1,3 +1,5 @@
+/* Global */
+
 body {
     background-color: rgb(22, 21, 21);
     color: white;
@@ -26,14 +28,7 @@ body * {
     pointer-events: none;
 }
 
-@keyframes onload {
-    from {
-        opacity: 0;
-    }
-    to {
-        opacity: 1;
-    }
-}
+/* Header */
 
 #header {
     width: 100%;
@@ -76,6 +71,31 @@ body * {
 
 .page-title .blue {
     padding-right: 1px;
+}
+
+/* Home page */
+
+.main-intro {
+    width: 100vw;
+    min-height: 150px;
+    position: relative;
+    top: 20px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-evenly;
+}
+
+[id^="main-block"] {
+    display: flex;
+    font-size: 30px;
+    height: 25px;
+    text-align: center;
+    padding: 0px 10px;
+}
+
+#main-block3 {
+    display: unset;
 }
 
 /* Projects */
@@ -148,7 +168,7 @@ body * {
 }
 
 #find {
-    animation: find 0.8s ease-out;
+    animation: find 0.8s ease;
 }
 
 @keyframes find {
@@ -165,19 +185,19 @@ body * {
 
 #c-github {
     right: 15%;
-    animation: contact-from-right 0.7s ease-out 0.8s forwards;
+    animation: contact-from-right 0.7s ease-out 0.6s forwards;
     opacity: 0;
 }
 
 #c-fiverr {
     left: 15%;
-    animation: contact-from-left 0.7s ease-out 1.5s forwards;
+    animation: contact-from-left 0.7s ease-out 1.3s forwards;
     opacity: 0;
 }
 
 #c-github2 {
     right: 15%;
-    animation: contact-from-right 0.7s ease-out 2.2s forwards;
+    animation: contact-from-right 0.7s ease-out 2.0s forwards;
     opacity: 0;
 }
 
@@ -245,13 +265,13 @@ body * {
     width: 75%;
     font-size: 21px;
     word-wrap: break-word;
-    animation: email 1s ease-out 2.9s forwards;
+    animation: email 0.7s ease-out 2.7s forwards;
     opacity: 0;
 }
 
 @keyframes email {
     from {
-        transform: translateY(40%);
+        transform: translateY(70%);
         opacity: 0;
     }
 
@@ -265,6 +285,10 @@ body * {
     position: relative;
     top: 10px;
     color: #fff;
+}
+
+.c-email a:hover {
+    color: #acacac;
 }
 
 /* Blog */
@@ -462,6 +486,14 @@ body * {
 
     .contacts {
         min-height: 260px;
+    }
+
+    #find {
+        font-size: 27px;
+    }
+
+    .c-email a {
+        font-size: 17px;
     }
 }
 

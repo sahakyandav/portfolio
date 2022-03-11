@@ -41,7 +41,11 @@
                 </a>
             </div>
         </div>
-        <h1 class="c-email">Maybe even write me an email<br><a href="mailto: davsahakyan.work@gmail.com">davsahakyan.work@gmail.com</h1>
+        <h1 class="c-email">
+            <span class='noselect'>Maybe even write me an email</span>
+            <br>
+            <a href="mailto: davsahakyan.work@gmail.com">davsahakyan.work@gmail.com</a>
+        </h1>
     </div>
     <script src="./js/script.js"></script>
 </body>
