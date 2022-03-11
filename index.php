@@ -18,7 +18,7 @@
 
         @media screen and (max-width: 600px) {
             #header {
-                height: 17vh;
+                height: 140px;
             }
 
             .main-intro {
