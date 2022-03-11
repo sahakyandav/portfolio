@@ -43,7 +43,7 @@ document.querySelectorAll('.scroll').forEach(btn => {
                 onComplete: function () {
                     setTimeout(() => {
                         document.body.style.overflowY = 'initial';
-                        document.body.style.display = 'initial';
+                        // document.body.style.display = 'initial';
                         document.querySelectorAll('.language').forEach((lang, i) => {
                             lang.style.animation = `language 0.9s ease ${i * 0.6}s forwards`;
                         })
