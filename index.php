@@ -10,6 +10,7 @@
     <style>
         body {
             overflow-y: hidden;
+            position: fixed;
         }
 
         #header {
