@@ -24,6 +24,10 @@
             .main-intro {
                 height: 77vh;
             }
+
+            .main-intro > * {
+              margin-bottom: 56px;
+            }   
         }
     </style>
 </head>
