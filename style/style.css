@@ -81,7 +81,7 @@ body * {
 
 .main-intro {
     width: 100vw;
-    height: calc(100vh - 200px);
+    height: 90vh;
     position: relative;
     top: 20px;
     display: flex;
@@ -189,6 +189,79 @@ body * {
   100% {
     opacity: 0;
   }
+}
+
+.main-slide1 {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-evenly;
+    height: 100vh
+}
+
+.main-story {
+    font-size: 26px;
+    padding: 0 15px;
+    text-align: center;
+    min-height: 100px;
+}
+
+.main-languages {
+    height: 200px;
+    width: 45vw;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+}
+
+.language {
+    width: 104px;
+    height: 104px;
+    background-color: #fff;
+    padding: 0 10px;
+    background-repeat: no-repeat;
+    background-position: center;
+    border-radius: 9px;
+    opacity: 0;
+}
+
+@keyframes language {
+    from {
+        transform: translateY(40%);
+    }
+
+    to {
+        transform: translateY(0%);
+        opacity: 1;
+    }
+}
+
+#l1 {
+    background-image: url("./icons/nodejs.png");
+    background-size: 70%;
+}
+
+#l2 {
+    background-image: url("./icons/php.png");
+    background-size: 90%;
+}
+
+#outro {
+    opacity: 0;
+}
+
+#outro a {
+    color: white;
+}
+
+@keyframes outro {
+    from {
+        opacity: 0;
+    }
+
+    to {
+        opacity: 1;
+    }
 }
 
 /* Projects */
@@ -542,7 +615,7 @@ body * {
         flex-direction: column;
         align-items: center;
         justify-content: space-evenly;
-        height: 140px;
+        height: 152px;
     }
 
     #header * {
@@ -592,6 +665,10 @@ body * {
 
     .c-email a {
         font-size: 17px;
+    }
+
+    .main-languages {
+        width: 100vw;
     }
 }
 
