@@ -248,6 +248,7 @@ body * {
 
 #outro {
     opacity: 0;
+    text-align: center;
 }
 
 #outro a {
