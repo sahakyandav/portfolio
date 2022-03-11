@@ -38,6 +38,7 @@
     <div class="nor" style='height: 100vh'></div>
     <div class="nor2" style='height: 100vh'></div>
     <script src="./js/script.js"></script>
+    <script src="./js/universalsmoothscroll-min.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/typed.js@2.0.12"></script>
     <script>
         let scroller1 = document.querySelector('#scroller1');
@@ -75,11 +76,12 @@
 
         document.querySelectorAll('.scroll').forEach(btn => {
             btn.addEventListener('click', function() {
-                window.scrollBy({
-                    left: 0,
-                    top: document.documentElement.clientHeight,
-                    behavior: 'smooth'
-                });
+                // window.scrollBy({
+                    // left: 0,
+                    // top: document.documentElement.clientHeight,
+                    // behavior: 'smooth'
+                // });
+                uss.scrollYBy(781)
             });
         });
     </script>
