@@ -34,10 +34,10 @@
                     <img src="./style/icons/fiverr.png" alt="fiverr">
                 </a>
             </div>
-            <div class="c" id="c-github2">
-                <a href="https://github.com/sahakyandav" target="_blank">
-                    <img src="./style/icons/github.png" alt="github">
-                    <h1 class="bold">Github</h1>
+            <div class="c" id="c-linkedin">
+                <a href="https://www.linkedin.com/in/david-sahakyan-775518218/" target="_blank">
+                    <img src="./style/icons/linkedin.png" alt="linkedin">
+                    <h1 class="bold">LinkedIn</h1>
                 </a>
             </div>
         </div>

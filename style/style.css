@@ -288,7 +288,7 @@ body * {
     opacity: 0;
 }
 
-#c-github2 {
+#c-linkedin {
     right: 15%;
     animation: contact-from-right 0.7s ease-out 2.0s forwards;
     opacity: 0;
@@ -320,7 +320,12 @@ body * {
 
 #c-fiverr h1.bold {
     position: relative;
-    left: 5%;
+    left: 7%;
+}
+
+#c-linkedin h1.bold {
+    position: relative;
+    left: 7%;
 }
 
 .c > a:hover {
