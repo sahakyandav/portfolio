@@ -41,7 +41,7 @@ document.querySelectorAll('.scroll').forEach(btn => {
                 if (ua.indexOf('chrome') > -1) {
                     uss.scrollYBy(document.documentElement.clientHeight)
                 } else {
-                    uss.scrollTo(0, document.body.scrollHeight - 250)
+                    uss.scrollTo(0, document.body.scrollHeight - 300)
                 }
             }
         } else {
@@ -59,8 +59,7 @@ document.querySelectorAll('.scroll').forEach(btn => {
                     backDelay: 400,
                     onComplete: function () {
                         setTimeout(() => {
-                            document.body.style.overflowY = 'initial';
-                            // document.body.style.display = 'initial';
+                            document.body.style.overflowY = 'scroll';
                             document.querySelectorAll('.language').forEach((lang, i) => {
                                 lang.style.animation = `language 0.9s ease ${i * 0.6}s forwards`;
                             })
