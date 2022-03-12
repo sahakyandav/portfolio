@@ -31,16 +31,12 @@ setTimeout(() => {
     })
 }, 2400);
 
-let isMobile = false;
-
-if (/Android|webOS|iPhone|iPad|iPod|BlackBerry|IEMobile|Opera Mini/i.test(navigator.userAgent)) {
-    isMobile = true;
-}
-
 document.querySelectorAll('.scroll').forEach(btn => {
     btn.addEventListener('click', function () {
-        if (isMobile) {
+        if (/Android|webOS|BlackBerry|IEMobile|Opera Mini/i.test(navigator.userAgent)) {
             uss.scrollTo(0, document.body.scrollHeight);
+        } else if (/|iPhone|iPad|iPod/.test(navigator.userAgent)) {
+            uss.scrollTo(0, document.body.scrollHeight - 100)
         } else {
             uss.scrollYBy(document.documentElement.clientHeight)
         }
