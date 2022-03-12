@@ -33,20 +33,24 @@ setTimeout(() => {
 
 document.querySelectorAll('.scroll').forEach(btn => {
     btn.addEventListener('click', function () {
-        if (/Android|webOS|BlackBerry|IEMobile|Opera Mini/i.test(navigator.userAgent)) {
-            uss.scrollYBy(document.documentElement.clientHeight)
-        } else if (/|iPhone|iPad|iPod/.test(navigator.userAgent)) {
-            var ua = navigator.userAgent.toLowerCase();
-            if (ua.indexOf('safari') != -1) {
-                if (ua.indexOf('chrome') > -1) {
-                    uss.scrollYBy(document.documentElement.clientHeight)
-                } else {
-                    uss.scrollTo(0, document.body.scrollHeight - 300)
-                }
-            }
-        } else {
-            uss.scrollYBy(document.documentElement.clientHeight)
-        }
+        // if (/Android|webOS|BlackBerry|IEMobile|Opera Mini/i.test(navigator.userAgent)) {
+            // uss.scrollYBy(document.documentElement.clientHeight)
+        // } else if (/|iPhone|iPad|iPod/.test(navigator.userAgent)) {
+            // var ua = navigator.userAgent.toLowerCase();
+            // if (ua.indexOf('safari') != -1) {
+                // if (ua.indexOf('chrome') > -1) {
+                    // uss.scrollYBy(document.documentElement.clientHeight)
+                // } else {
+                    // uss.scrollTo(0, document.body.scrollHeight - 300)
+                // }
+            // }
+        // } else {
+            // uss.scrollYBy(document.documentElement.clientHeight)
+        // }
+
+        uss.scrollIntoView(document.querySelector('.main-slide1'), true, true, () => {
+            console.log('barev')
+        })
 
         let revealed = false;
         if (!revealed) {
