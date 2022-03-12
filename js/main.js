@@ -36,7 +36,7 @@ document.querySelectorAll('.scroll').forEach(btn => {
         if (/Android|webOS|BlackBerry|IEMobile|Opera Mini/i.test(navigator.userAgent)) {
             uss.scrollTo(0, document.body.scrollHeight);
         } else if (/|iPhone|iPad|iPod/.test(navigator.userAgent)) {
-            uss.scrollTo(0, document.body.scrollHeight - 180)
+            uss.scrollTo(0, document.body.scrollHeight - 220)
         } else {
             uss.scrollYBy(document.documentElement.clientHeight)
         }
