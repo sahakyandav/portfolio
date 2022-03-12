@@ -31,28 +31,43 @@ setTimeout(() => {
     })
 }, 2400);
 
+let isMobile = false;
+
+if (/Android|webOS|iPhone|iPad|iPod|BlackBerry|IEMobile|Opera Mini/i.test(navigator.userAgent)) {
+    isMobile = true;
+}
+
 document.querySelectorAll('.scroll').forEach(btn => {
     btn.addEventListener('click', function () {
-        uss.scrollYBy(document.documentElement.clientHeight)
-        setTimeout(() => {
-            var typed3 = new Typed('#storyline', {
-                strings: ['In 2021, I started my first full-time job as a developer', 'Learining how to create web banners, I started freelancing on side', 'But then it finally clicked - front-end was not for me,<br>so I started getting into back-end', 'Currently I am learning'],
-                typeSpeed: 70,
-                backSpeed: 8,
-                backDelay: 400,
-                onComplete: function () {
-                    setTimeout(() => {
-                        document.body.style.overflowY = 'initial';
-                        // document.body.style.display = 'initial';
-                        document.querySelectorAll('.language').forEach((lang, i) => {
-                            lang.style.animation = `language 0.9s ease ${i * 0.6}s forwards`;
-                        })
-                        setTimeout(() => { 
-                            document.querySelector('#outro').style.animation = `outro 1s ease forwards`;
-                        }, 1550)
-                    }, 40);
-                }
-            })
-        }, 800);
+        if (isMobile) {
+            uss.scrollTo(0, document.body.scrollHeight);
+        } else {
+            uss.scrollYBy(document.documentElement.clientHeight)
+        }
+
+        let revealed = false;
+        if (!revealed) {
+            revealed = true;
+            setTimeout(() => {
+                var typed3 = new Typed('#storyline', {
+                    strings: ['In 2021, I started my first full-time job as a developer', 'Learining how to create web<br>banners, I started freelancing on side', 'But then it finally clicked - front-end was not for me,<br>so I started getting into back-end', 'Currently I am learning'],
+                    typeSpeed: 70,
+                    backSpeed: 8,
+                    backDelay: 400,
+                    onComplete: function () {
+                        setTimeout(() => {
+                            document.body.style.overflowY = 'initial';
+                            // document.body.style.display = 'initial';
+                            document.querySelectorAll('.language').forEach((lang, i) => {
+                                lang.style.animation = `language 0.9s ease ${i * 0.6}s forwards`;
+                            })
+                            setTimeout(() => {
+                                document.querySelector('#outro').style.animation = `outro 1s ease forwards`;
+                            }, 1550)
+                        }, 40);
+                    }
+                })
+            }, 800);
+        }
     });
 });
