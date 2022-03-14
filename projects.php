@@ -23,21 +23,19 @@
         <h1>Projects</h1>
     </div>
     <div class="showcase">
-        <!-- <div class="window"> -->
-            <div class="project"></div>
-            <div class="project"></div>
-            <div class="project"></div>
-        <!-- </div> -->
-        <!-- <div class="window"> -->
-            <div class="project"></div>
-            <div class="project"></div>
-            <div class="project"></div>
-        <!-- </div> -->
-        <!-- <div class="window"> -->
-            <div class="project"></div>
-            <div class="project"></div>
-            <div class="project"></div>
-        <!-- </div> -->
+    <div class="project">
+            <h2 class="project-title">Example project</h2>
+            <img src="https://s3-prod.modernhealthcare.com/s3fs-public/David_WEB_edit.jpg" alt="">
+            <p class="project-description">Lorem ipsum dolor sit amet consectetur adipisicing elit. Reiciendis quod earum quisquam adipisci veritatis sapiente ipsum perferendis delectus</h1>
+            <div class="project-button">
+                <a href="https://github.com/sahakyandav" target='_blank'>Check on Github</a>
+            </div>
+        </div>
+        <div class="project"></div>
+        <div class="project"></div>
+        <div class="project"></div>
+        <div class="project"></div>
+        <div class="project"></div>
     </div>
     <script src="./js/script.js"></script>
 </body>
