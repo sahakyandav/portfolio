@@ -70,8 +70,8 @@
         <h2 id="outro">For more info on me, check <a href='./projects.php'><i>Projects</i></a> page</h2>
     </div>
     <script src="./js/script.js"></script>
-    <script src="./js/universalsmoothscroll-min.js"></script>
-    <script src="https://cdn.jsdelivr.net/npm/typed.js@2.0.12"></script>
+    <script src="./js/uss.js"></script>
+    <script src="./js/typed.js"></script>
     <script src="./js/main.js"></script>
 </body>
 

@@ -31,32 +31,19 @@ setTimeout(() => {
     })
 }, 2400);
 
+let revealed = false;
+let typed3;
+
 document.querySelectorAll('.scroll').forEach(btn => {
     btn.addEventListener('click', function () {
-        // if (/Android|webOS|BlackBerry|IEMobile|Opera Mini/i.test(navigator.userAgent)) {
-            // uss.scrollYBy(document.documentElement.clientHeight)
-        // } else if (/|iPhone|iPad|iPod/.test(navigator.userAgent)) {
-            // var ua = navigator.userAgent.toLowerCase();
-            // if (ua.indexOf('safari') != -1) {
-                // if (ua.indexOf('chrome') > -1) {
-                    // uss.scrollYBy(document.documentElement.clientHeight)
-                // } else {
-                    // uss.scrollTo(0, document.body.scrollHeight - 300)
-                // }
-            // }
-        // } else {
-            // uss.scrollYBy(document.documentElement.clientHeight)
-        // }
-
         uss.scrollIntoView(document.querySelector('.main-slide1'), true, true, () => {
-            console.log('barev')
+            // console.log('barev')
         })
 
-        let revealed = false;
         if (!revealed) {
             revealed = true;
             setTimeout(() => {
-                var typed3 = new Typed('#storyline', {
+                typed3 = new Typed('#storyline', {
                     strings: ['In 2021, I started my first full-time job as a developer', 'Learining how to create web<br>banners, I started freelancing on side', 'But then it finally clicked - front-end was not for me,<br>so I started getting into back-end', 'Currently I am learning'],
                     typeSpeed: 70,
                     backSpeed: 8,
