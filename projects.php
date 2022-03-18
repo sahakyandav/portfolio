@@ -7,6 +7,11 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>davsahakyan</title>
     <link rel="stylesheet" href="./style/style.css">
+    <link rel="stylesheet" href="./style/projects.css">
+    <style>
+ 
+
+    </style>
 </head>
 
 <body>
@@ -20,24 +25,12 @@
         </div>
     </header>
     <div class="introduction">
-        <h1>Projects</h1>
+        <h1><b>Projects from my <a href="https://github.com/sahakyandav">Github</a></b></h1>
     </div>
-    <div class="showcase">
-    <div class="project">
-            <h2 class="project-title">Example project</h2>
-            <img src="https://s3-prod.modernhealthcare.com/s3fs-public/David_WEB_edit.jpg" alt="">
-            <p class="project-description">Lorem ipsum dolor sit amet consectetur adipisicing elit. Reiciendis quod earum quisquam adipisci veritatis sapiente ipsum perferendis delectus</h1>
-            <div class="project-button">
-                <a href="https://github.com/sahakyandav" target='_blank'>Check on Github</a>
-            </div>
-        </div>
-        <div class="project"></div>
-        <div class="project"></div>
-        <div class="project"></div>
-        <div class="project"></div>
-        <div class="project"></div>
-    </div>
+    <div class="repos"></div>
+    
     <script src="./js/script.js"></script>
+    <script src="./js/projects.js"></script>
 </body>
 
 </html>
