@@ -369,7 +369,7 @@ body * {
     min-height: 200px;
     display: flex;
     margin-top: 50px;
-    flex-direction: column;
+    flex-direction: column-reverse;
     justify-content: center;
     align-items: center;
 }
@@ -387,7 +387,7 @@ body * {
     border-bottom: 1px solid #fff;
 }
 
-.repos> :nth-last-child(1) {
+.repos> :first-child {
     border-bottom: unset;
 }
 
