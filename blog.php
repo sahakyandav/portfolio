@@ -21,7 +21,7 @@
     </header>
     <script src="./js/script.js"></script>
     <div class="blog-intro">
-        <h1>You can find some write-ups and thoughts here</h1>
+        <h1>You can find some of my<br>write-ups and thoughts here</h1>
     </div>
     <div id="cover"></div>
     <div class="main-content">
