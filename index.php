@@ -13,7 +13,10 @@
         }
 
         #header {
-            height: 10vh;
+            background-color: rgb(22, 21, 21);
+            position: fixed;
+            top: 0;
+            z-index: 5;
         }
 
         @media screen and (max-width: 600px) {
@@ -21,8 +24,8 @@
                 height: 140px;
             }
 
-            .main-intro {
-                height: 77vh;
+            .main-slide1 {
+                margin-top: 120px;
             }
 
             .main-intro > * {
@@ -60,9 +63,11 @@
     </div>
     <div class="main-slide1">
         <h1>A short <i>about me</i></h1>
-        <p class='main-story'>
-            <span id="storyline"></span>
-        </p>
+        <div class="main-story-wrapper">
+            <p class='main-story'>
+                <span id="storyline"></span>
+            </p>
+        </div>
         <div class="main-languages">
             <div class="language" id="l1"></div>
             <div class="language" id="l2"></div>

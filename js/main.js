@@ -1,7 +1,8 @@
 if (history.scrollRestoration) {
     history.scrollRestoration = 'manual';
 }
-window.scrollTo(0, 0)
+
+// window.scrollTo(0, 0)
 
 var typed = new Typed('#intro', {
     strings: ['Hey', 'I\'m David'],
@@ -33,13 +34,12 @@ setTimeout(() => {
 
 let revealed = false;
 let typed3;
-
+let slide1 = document.querySelector('.main-slide1');
 document.querySelectorAll('.scroll').forEach(btn => {
     btn.addEventListener('click', function () {
-        uss.scrollIntoView(document.querySelector('.main-slide1'), true, true, () => {
-            // console.log('barev')
-        })
-
+        // uss.scrollIntoView(slide1, true, true, () => { })
+        uss.scrollYBy(document.querySelector('.main-intro').offsetHeight)
+        console.log(document.querySelector('.main-intro').offsetHeight);
         if (!revealed) {
             revealed = true;
             setTimeout(() => {
