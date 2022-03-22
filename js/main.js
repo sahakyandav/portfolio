@@ -4,6 +4,7 @@ if (history.scrollRestoration) {
 
 // window.scrollTo(0, 0)
 
+let scroller1 = document.querySelector('#scroller1');
 var typed = new Typed('#intro', {
     strings: ['Hey', 'I\'m David'],
     typeSpeed: 90,
@@ -14,23 +15,19 @@ var typed = new Typed('#intro', {
             typed.toggleBlinking();
             typed.cursor.parentElement.style.width = getComputedStyle(typed.cursor.parentElement).getPropertyValue('width');
             typed.cursor.remove();
+            new Typed('#intro3', {
+                strings: ['A starting back-end developer based in<br>Yerevan, Armenia'],
+                typeSpeed: 85,
+                onComplete: function () {
+                    setTimeout(() => {
+                        scroller1.style.opacity = '1';
+                        scroller1.style.pointerEvents = 'auto';
+                    }, 40);
+                }
+            })
         }, 40);
     }
 });
-
-let scroller1 = document.querySelector('#scroller1');
-setTimeout(() => {
-    new Typed('#intro3', {
-        strings: ['A starting back-end developer based in<br>Yerevan, Armenia'],
-        typeSpeed: 85,
-        onComplete: function () {
-            setTimeout(() => {
-                scroller1.style.opacity = '1';
-                scroller1.style.pointerEvents = 'auto';
-            }, 40);
-        }
-    })
-}, 2400);
 
 let revealed = false;
 let typed3;
