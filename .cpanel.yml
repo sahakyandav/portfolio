@@ -1,5 +1,5 @@
 ---
 deployment:
   tasks:
-    - export DEPLOYPATH=/home/admin/public_html/
-    - /bin/cp *.php $DEPLOYPATH
+    - export DEPLOYPATH=/home/admin/public_html/portfolio
+    # - /bin/cp *.php $DEPLOYPATH
