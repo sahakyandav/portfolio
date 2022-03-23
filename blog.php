@@ -19,6 +19,28 @@
             <div class="blog"><a class="active-page">Blog</a></div>
         </div>
     </header>
+    <div class='contact-sidebar'>
+        <div class="contact-item">
+            <a href="https://github.com/sahakyandav" target='_blank'>
+                <img src="./style/icons/github.png" alt="">
+            </a>
+        </div>
+        <div class="contact-item">
+            <a href="https://www.linkedin.com/in/david-sahakyan-775518218/" target='_blank'>
+                <img src="./style/icons/linkedin.png" alt="">
+            </a>
+        </div>
+        <div class="contact-item">
+            <a href="https://www.fiverr.com/davsahakyann" target='_blank'>
+                <img src="./style/icons/fiverr.png" alt="">
+            </a>
+        </div>
+        <div class="contact-item">
+             <a href="mailto: davsahakyan.work@gmail.com">
+                <h1>@</h1>
+            </a>
+        </div>
+    </div>
     <script src="./js/script.js"></script>
     <div class="blog-intro">
         <h1>You can find some of my<br>write-ups and thoughts here</h1>
