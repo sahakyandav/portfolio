@@ -45,6 +45,28 @@
             <div class="blog"><a>Blog</a></div>
         </div>
     </header>
+    <div class='contact-sidebar'>
+        <div class="contact-item">
+            <a href="https://github.com/sahakyandav" target='_blank'>
+                <img src="./style/icons/github.png" alt="">
+            </a>
+        </div>
+        <div class="contact-item">
+            <a href="https://www.linkedin.com/in/david-sahakyan-775518218/" target='_blank'>
+                <img src="./style/icons/linkedin.png" alt="">
+            </a>
+        </div>
+        <div class="contact-item">
+            <a href="https://www.fiverr.com/davsahakyann" target='_blank'>
+                <img src="./style/icons/fiverr.png" alt="">
+            </a>
+        </div>
+        <div class="contact-item">
+             <a href="mailto: davsahakyan.work@gmail.com">
+                <h1>@</h1>
+            </a>
+        </div>
+    </div>
     <div class="main-intro">
         <div class="main-texts1">
             <div id="main-block1">
