@@ -15,7 +15,6 @@
         <div class="menu">
             <div class="home"><a>Home</a></div>
             <div class="projects"><a>Projects</a></div>
-            <div class="contact"><a class="active-page">Contact</a></div>
             <div class="blog"><a>Blog</a></div>
         </div>
     </header>

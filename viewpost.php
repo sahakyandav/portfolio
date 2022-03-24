@@ -29,9 +29,8 @@
         <h1 class="page-title"><span class="blue">dav</span>sahakyan</h1>
         <div class="menu">
             <div class="home"><a>Home</a></div>
-            <div class="projects"><a class="active-page">Projects</a></div>
-            <div class="contact"><a>Contact</a></div>
-            <div class="blog"><a>Blog</a></div>
+            <div class="projects"><a>Projects</a></div>
+            <div class="blog"><a class="active-page">Blog</a></div>
         </div>
     </header>
     <script src="./js/script.js"></script>

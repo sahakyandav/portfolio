@@ -41,7 +41,6 @@
         <div class="menu">
             <div class="home"><a class="active-page">Home</a></div>
             <div class="projects"><a>Projects</a></div>
-            <div class="contact"><a>Contact</a></div>
             <div class="blog"><a>Blog</a></div>
         </div>
     </header>
@@ -63,7 +62,7 @@
         </div>
         <div class="contact-item">
              <a href="mailto: davsahakyan.work@gmail.com">
-                <h1>@</h1>
+                <img src="./style/icons/mail.png" alt="">
             </a>
         </div>
     </div>
@@ -96,6 +95,28 @@
         </div>
         <h2 id="outro">For more info on me, check <a href='./projects.php'><i>Projects</i></a> page</h2>
     </div>
+    <footer>
+        <div class="contact-item">
+            <a href="https://github.com/sahakyandav" target='_blank'>
+                <img src="./style/icons/github.png" alt="">
+            </a>
+        </div>
+        <div class="contact-item">
+            <a href="https://www.linkedin.com/in/david-sahakyan-775518218/" target='_blank'>
+                <img src="./style/icons/linkedin.png" alt="">
+            </a>
+        </div>
+        <div class="contact-item">
+            <a href="https://www.fiverr.com/davsahakyann" target='_blank'>
+                <img src="./style/icons/fiverr.png" alt="">
+            </a>
+        </div>
+        <div class="contact-item">
+             <a href="mailto: davsahakyan.work@gmail.com">
+                <img src="./style/icons/mail.png" alt="">
+            </a>
+        </div>
+    </footer>
     <script src="./js/script.js"></script>
     <script src="./js/uss.js"></script>
     <script src="./js/typed.js"></script>

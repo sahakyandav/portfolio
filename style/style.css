@@ -7,6 +7,15 @@ body {
     font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
 }
 
+body::after {
+    position: absolute;
+    width: 0;
+    height: 0;
+    overflow: hidden;
+    z-index: -1;
+    content: url("./icons/fiverr.png") url("./icons/github.png") url('./icons/linkedin.png') url('./icons/mail.png');
+}
+
 body>* {
     transition: ease 1s;
 }
@@ -58,7 +67,7 @@ body * {
     position: relative;
     display: flex;
     justify-content: space-evenly;
-    width: 320px;
+    width: 240px;
     right: 2%;
 }
 
@@ -420,7 +429,7 @@ body * {
 
 .repos {
     width: 100vw;
-    min-height: 200px;
+    min-height: 320px;
     display: flex;
     margin-top: 50px;
     flex-direction: column-reverse;
@@ -498,169 +507,6 @@ body * {
     }
 }
 
-/* Contact */
-
-.contact-wrapper {
-    text-align: center;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: space-evenly;
-    width: 100vw;
-    position: relative;
-    top: 20px;
-}
-
-.contacts * {
-    position: relative;
-}
-
-.contacts {
-    width: 100%;
-    min-height: 330px;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: space-evenly;
-    align-items: center;
-    position: relative;
-    top: 25px;
-}
-
-.c {
-    width: 160px;
-    height: 56px;
-}
-
-#find {
-    animation: find 0.8s ease;
-}
-
-@keyframes find {
-    from {
-        transform: translateY(-60%);
-        opacity: 0;
-    }
-
-    to {
-        transform: translateY(0%);
-        opacity: 1;
-    }
-}
-
-#c-github {
-    right: 15%;
-    animation: contact-from-right 0.7s ease-out 0.6s forwards;
-    opacity: 0;
-}
-
-#c-fiverr {
-    left: 15%;
-    animation: contact-from-left 0.7s ease-out 1.3s forwards;
-    opacity: 0;
-}
-
-#c-linkedin {
-    right: 15%;
-    animation: contact-from-right 0.7s ease-out 2.0s forwards;
-    opacity: 0;
-}
-
-@keyframes contact-from-right {
-    from {
-        transform: translateX(-40%);
-        opacity: 0;
-    }
-
-    to {
-        transform: translateX(0%);
-        opacity: 1;
-    }
-}
-
-@keyframes contact-from-left {
-    from {
-        transform: translateX(40%);
-        opacity: 0;
-    }
-
-    to {
-        transform: translateX(0%);
-        opacity: 1;
-    }
-}
-
-#c-fiverr h1.bold {
-    position: relative;
-    left: 7%;
-}
-
-#c-linkedin h1.bold {
-    position: relative;
-    left: 7%;
-}
-
-.c>a:hover {
-    transform: scale(1.2) !important;
-}
-
-.c>a {
-    width: 100%;
-    height: 100%;
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    text-decoration: none;
-    color: #fff;
-    transition: 0.5s ease;
-}
-
-.c img {
-    width: 54px;
-    height: 54px;
-    border-radius: 9px;
-    padding: 1px;
-    background-color: #fff;
-}
-
-.c h1.bold {
-    font-size: 28px;
-}
-
-.c-email {
-    position: relative;
-    top: 50px;
-    text-align: center;
-    max-width: 400px;
-    width: 75%;
-    font-size: 21px;
-    word-wrap: break-word;
-    animation: email 0.7s ease-out 2.7s forwards;
-    opacity: 0;
-}
-
-@keyframes email {
-    from {
-        transform: translateY(70%);
-        opacity: 0;
-    }
-
-    to {
-        transform: translateY(0%);
-        opacity: 1;
-    }
-}
-
-.c-email a {
-    position: relative;
-    top: 10px;
-    color: #fff;
-}
-
-.c-email a:hover {
-    color: #acacac;
-}
-
 /* Blog */
 
 .bold {
@@ -675,18 +521,20 @@ body * {
 }
 
 .blog-intro>h1 {
-    padding: 0 5px;
-    font-size: 30px;
+    padding: 0px 30px;
+    font-size: 25px;
     text-align: center;
 }
 
 .main-content {
-    max-width: 560px;
-    width: 83%;
-    position: absolute;
-    left: 50%;
-    transform: translateX(-50%);
+    width: 100%;
+    transform: unset !important;
     font-size: 20px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+    min-height: 350px;
 }
 
 .main-content * {
@@ -707,18 +555,17 @@ body * {
 }
 
 .blog-entry {
-    width: 100%;
+    width: 50%;
     min-height: 124.8px;
 }
 
 .blog-inner {
-    margin: 7px 2px;
     border-radius: 9px;
     border: 1px solid #2949c2;
     background-color: #232323;
     position: relative;
-    padding: 5px 8px;
-    padding-bottom: 8px;
+    padding: 5px 5px;
+    right: 4px;
     width: 100%;
     height: inherit;
 }
@@ -734,9 +581,9 @@ body * {
     display: flex;
     flex-direction: column;
     justify-content: space-evenly;
-
     position: relative;
-    top: 5px;
+    align-items: center;
+    width: 100%;
 }
 
 #textarea {
@@ -771,6 +618,11 @@ body * {
 
 .blog-text {
     margin-top: 6px;
+    margin-left: 2px;
+}
+
+.blog-inner .bold {
+    margin-left: 3px;
 }
 
 /* View blog */
@@ -802,6 +654,12 @@ body * {
     background: #888;
 }
 
+/* Footer */
+
+footer {
+    display: none;
+}
+
 /* Responsiness media queries */
 
 @media screen and (max-width: 1170px) {
@@ -809,6 +667,10 @@ body * {
         grid-template-columns: [first-c] auto [second-c] auto;
         column-gap: 90px;
         row-gap: 40px;
+    }
+
+    .blog-entry {
+        width: 70%;
     }
 }
 
@@ -844,7 +706,7 @@ body * {
     }
 
     .menu {
-        max-width: 375px;
+        max-width: 335px;
         width: 100%;
     }
 
@@ -861,10 +723,6 @@ body * {
         font-size: 16px;
         right: 9px;
         text-align: end;
-    }
-
-    .main-content {
-        transform: translateX(-54%);
     }
 
     .contacts {
@@ -887,12 +745,34 @@ body * {
         height: 180px;
         width: 40px;
         top: 70%;
-        display: none; 
+        display: none;
     }
 
     .contact-item {
         width: 34px;
         height: 34px;
+    }
+
+    footer {
+        width: 100%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        position: relative;
+        height: 3em;
+        margin: 15vh 0 4vh 0;
+    }
+
+    footer .contact-item {
+        padding: 9px;
+        width: 38px;
+        height: 38px;
+        border-radius: 30px;
+        margin: 0px 9px;
+    }
+
+    .blog-entry {
+        width: 90%;
     }
 }
 
