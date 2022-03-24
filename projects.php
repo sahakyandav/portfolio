@@ -41,7 +41,7 @@
         </div>
     </div>
     <div class="introduction">
-        <h1><b>Projects from my <a href="https://github.com/sahakyandav">Github</a></b></h1>
+        <h1><b>Projects from <a href="https://github.com/sahakyandav">Github</a></b></h1>
     </div>
     <div class="repos"></div>
     <footer>

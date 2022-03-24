@@ -4,9 +4,6 @@ document.querySelector('.home').onclick = () => {
 document.querySelector('.projects').onclick = () => {
     location.replace('projects.php')
 }
-// document.querySelector('.contact').onclick = () => {
-//     location.replace('contact.php')
-// }
 document.querySelector('.blog').onclick = () => {
     location.replace('blog.php')
 }

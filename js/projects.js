@@ -20,5 +20,4 @@ fetch('https://api.github.com/users/sahakyandav/repos')
             `;
             document.querySelector('.repos').appendChild(div)
         })
-        // document.querySelector('footer').style.animation = 'appear 0.8s ease';
     });
