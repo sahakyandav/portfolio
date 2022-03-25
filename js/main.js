@@ -34,9 +34,7 @@ let typed3;
 let slide1 = document.querySelector('.main-slide1');
 document.querySelectorAll('.scroll').forEach(btn => {
     btn.addEventListener('click', function () {
-        // uss.scrollIntoView(slide1, true, true, () => { })
         uss.scrollYBy(document.querySelector('.main-intro').offsetHeight)
-        console.log(document.querySelector('.main-intro').offsetHeight);
         if (!revealed) {
             revealed = true;
             setTimeout(() => {
