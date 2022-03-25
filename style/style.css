@@ -93,11 +93,11 @@ body * {
     position: fixed;
     height: 250px;
     width: 60px;
-    top: 50%;
+    top: 80%;
     transform: translateY(-50%);
-    right: 0;
-    border-top-left-radius: 15px;
-    border-bottom-left-radius: 15px;
+    left: 0;
+    border-top-right-radius: 15px;
+    border-bottom-right-radius: 15px;
     background-color: rgb(37, 37, 37);
     display: flex;
     flex-direction: column;
