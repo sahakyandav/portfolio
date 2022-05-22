@@ -23,3 +23,13 @@ fetch('https://api.github.com/users/sahakyandav/repos')
             document.querySelector('.repos').appendChild(div)
         })
     });
+
+window.addEventListener('load', () => {
+    let element = document.querySelector('.introduction a');
+    setTimeout(() => {
+        element.classList.add('introduction-animated');
+        setTimeout(() => {
+            element.classList.remove('introduction-animated');
+        }, 2000)
+    }, 400)
+})
