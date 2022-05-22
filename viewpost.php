@@ -45,7 +45,8 @@
                 <div class='view-content'>{$_POST['content']}</div>
                 </div>";
             } else {
-                echo "<div class='view-blog'><h1>A bad request was submitted, please try again</h1></div>";
+                echo "<div class='view-blog'><a href='blog.php'><- Return to blog</a><br><br>
+                <h2>A bad request was submitted, please try again</h2></div>";
             }
         ?>
     </div>

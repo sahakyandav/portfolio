@@ -2,7 +2,9 @@ fetch('https://api.github.com/users/sahakyandav/repos')
     .then(response => response.text())
     .then(data => {
         let repos = JSON.parse(data);
-        repos.forEach(repo => {
+        repos.sort((a, b) => {
+            return a.stargazers_count - b.stargazers_count;
+        }).forEach(repo => {
             let div = document.createElement('div');
             div.classList.add('repo');
             div.innerHTML = `
@@ -12,7 +14,7 @@ fetch('https://api.github.com/users/sahakyandav/repos')
                     </a>
                 </div>
                 <div class="repo-description">
-                    ${repo.description}
+                    ${!!repo.description ? repo.description : 'No description yet'}
                 </div>
                 <div class="repo-stars">
                     &#9733;${repo.stargazers_count}
