@@ -83,17 +83,6 @@
         </section>
     </div>
     <div class="main-slide1">
-        <h1>A short <i>about me</i></h1>
-        <div class="main-story-wrapper">
-            <p class='main-story'>
-                <span id="storyline"></span>
-            </p>
-        </div>
-        <div class="main-languages">
-            <div class="language" id="l1"></div>
-            <div class="language" id="l2"></div>
-        </div>
-        <h2 id="outro">For more info on me, check <a href='./projects.php'><i>Projects</i></a> page</h2>
     </div>
     <footer>
         <div class="contact-item">

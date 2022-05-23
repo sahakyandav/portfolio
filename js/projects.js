@@ -28,8 +28,10 @@ window.addEventListener('load', () => {
     let element = document.querySelector('.introduction a');
     setTimeout(() => {
         element.classList.add('introduction-animated');
-        setTimeout(() => {
-            element.classList.remove('introduction-animated');
-        }, 2000)
+        if (window.innerWidth > 600) {
+            setTimeout(() => {
+                element.classList.remove('introduction-animated');
+            }, 2000)
+        }
     }, 400)
 })

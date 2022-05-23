@@ -435,6 +435,7 @@ body * {
     flex-direction: column-reverse;
     justify-content: center;
     align-items: center;
+    padding-bottom: 40px;
 }
 
 .repo {
@@ -790,6 +791,10 @@ footer {
 
     .blog-entry {
         width: 90%;
+    }
+
+    .introduction h1 {
+        line-height: 55px;
     }
 }
 

@@ -34,8 +34,9 @@ let typed3;
 let slide1 = document.querySelector('.main-slide1');
 document.querySelectorAll('.scroll').forEach(btn => {
     btn.addEventListener('click', function () {
-        location.replace('projects.php')
-        // uss.scrollYBy(document.querySelector('.main-intro').offsetHeight)
+        uss.scrollYBy(document.querySelector('.main-intro').offsetHeight, window, () => {
+            location.replace('projects.php')
+        })
         // if (!revealed) {
         //     revealed = true;
         //     setTimeout(() => {
