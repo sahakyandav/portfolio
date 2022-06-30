@@ -26,14 +26,14 @@ fetch('https://api.github.com/users/sahakyandav/repos')
         document.querySelector('.repos').innerHTML = `<h2 class="github-fallback">Sorry, the github api got a bit overloaded.<br>Check back a bit later</h2>`
     })
 
-window.addEventListener('load', () => {
-    let element = document.querySelector('.introduction a');
-    setTimeout(() => {
-        element.classList.add('introduction-animated');
-        if (window.innerWidth > 600) {
-            setTimeout(() => {
-                element.classList.remove('introduction-animated');
-            }, 2000)
-        }
-    }, 400)
-})
+// window.addEventListener('load', () => {
+//     let element = document.querySelector('.introduction a');
+//     setTimeout(() => {
+//         element.classList.add('introduction-animated');
+//         if (window.innerWidth > 600) {
+//             setTimeout(() => {
+//                 element.classList.remove('introduction-animated');
+//             }, 2000)
+//         }
+//     }, 400)
+// })
