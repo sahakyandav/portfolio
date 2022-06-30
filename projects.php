@@ -7,6 +7,19 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>davsahakyan</title>
     <link rel="stylesheet" href="./style/style.css">
+    <style>
+        .github-fallback {
+            font-weight: 300;
+            text-align: center;
+        }
+
+        @media screen and (max-width: 395px) {
+            header {
+                margin-bottom: 50px;
+            }
+
+        }
+    </style>
 </head>
 
 <body>
@@ -35,13 +48,28 @@
             </a>
         </div>
         <div class="contact-item">
-             <a href="mailto: davsahakyan.work@gmail.com">
+            <a href="mailto: davsahakyan.work@gmail.com">
                 <img src="./style/icons/mail.png" alt="">
             </a>
         </div>
     </div>
     <div class="introduction">
-        <h1><b>Projects from <a href="https://github.com/sahakyandav">Github</a></b></h1>
+        <h1><b>Some of my projects developed freelance</b></h1>
+    </div>
+    <div class="projects-introduction">
+        <div class="project-showcase">
+            <h1>
+                <a href="https://davsahakyan.com/caviar">Caviar</a>
+            </h1>
+        </div>
+        <div class="project-showcase">
+            <h1>
+                <a href="https://davsahakyan.com/elegant">Elegant</a>
+            </h1>
+        </div>
+    </div>
+    <div class="introduction">
+        <h1><b>And also some of my projects from <a href="https://github.com/sahakyandav">Github</a></b></h1>
     </div>
     <div class="repos"></div>
     <footer>
@@ -61,12 +89,12 @@
             </a>
         </div>
         <div class="contact-item">
-             <a href="mailto: davsahakyan.work@gmail.com">
+            <a href="mailto: davsahakyan.work@gmail.com">
                 <img src="./style/icons/mail.png" alt="">
             </a>
         </div>
     </footer>
-    
+
     <script src="./js/script.js"></script>
     <script src="./js/projects.js"></script>
 </body>

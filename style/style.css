@@ -509,6 +509,48 @@ body * {
     background-color: #fff !important;
 }
 
+.projects-introduction {
+    width: 75vw;
+    max-width: 1000px;
+    margin: auto;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    padding: 3em 0;
+}
+
+.project-showcase {
+    margin: 2em auto;
+    line-height: 30px;
+    border: 3px solid #1f13c2;
+    padding: 0.5em 1em;
+    background: transparent;
+    transition: all 0.5s ease;
+    background: linear-gradient(to left, transparent 50%, #1f13c2 50%);
+    background-position: right;
+    background-size: 220%;
+    transition: .5s ease;
+    text-align: center;
+}
+
+.project-showcase:nth-of-type(2n) {
+    background: linear-gradient(to right, transparent 50%, #1f13c2 50%);
+    background-position: left;
+    background-size: 220%;
+}
+
+.project-showcase:hover {
+    background-position: left;
+}
+
+.project-showcase:nth-of-type(2n):hover {
+    background-position: right;
+}
+
+.project-showcase h1 a {
+    text-decoration: none;
+    color: #fff;
+}
+
 @media screen and (max-width: 1100px) {
     .repo {
         width: 80%;
@@ -793,15 +835,37 @@ footer {
         width: 90%;
     }
 
+    .introduction {
+        width: 90vw;
+        margin: auto;
+    }
+
     .introduction h1 {
+        font-size: 36px;
         line-height: 55px;
+    }
+
+    .projects-introduction {
+        grid-template-columns: 1fr;
+    }
+
+    .project-showcase {
+        max-width: 160px;
+        width: 90vw;
     }
 }
 
-@media screen and (max-width: 390px) {
+@media screen and (max-width: 395px) {
     .introduction h1 {
         padding: 0 20px;
+        width: 95vw;
+        font-size: 30px;
     }
+
+    .introduction {
+        height: unset;
+    }
+
 }
 
 @media screen and (max-width: 375px) {
