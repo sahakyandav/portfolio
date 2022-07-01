@@ -59,12 +59,12 @@
     <div class="projects-introduction">
         <div class="project-showcase">
             <h1>
-                <a href="https://davsahakyan.com/caviar">Caviar</a>
+                <a href="https://davsahakyan.com/caviar" target="_blank">Caviar</a>
             </h1>
         </div>
         <div class="project-showcase">
             <h1>
-                <a href="https://davsahakyan.com/elegant">Elegant</a>
+                <a href="https://davsahakyan.com/elegant" target="_blank">Elegant</a>
             </h1>
         </div>
     </div>

@@ -540,6 +540,7 @@ body * {
 
 .project-showcase:hover {
     background-position: left;
+    border: 3px solid #180f96;
 }
 
 .project-showcase:nth-of-type(2n):hover {
